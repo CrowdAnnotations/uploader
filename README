@@ -15,8 +15,7 @@ this README file named ca_uploader.
 
 In both cases, the API is similar.
 
-* Please read "Temporary Files" section to follow best practice and remove intermediate (ZIP) files created by this utility after it's done, 
-which can consume up to your dataset size in your TEMP_DIR unless you explicity clean it up afterwards.
+* Please read "Temporary Files" section to follow best practice and remove intermediate (ZIP) files created by this utility after it's done, which can consume up to your dataset size in your TEMP_DIR unless you explicity clean it up afterwards.
 
 
 API:
