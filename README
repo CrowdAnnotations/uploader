@@ -1,0 +1,52 @@
+ ----------------------------------
+| CrowdAnnotations Dataset Uploader |
+ ----------------------------------
+
+Description:
+
+This utility is responsible for uploading datasets to CrowdAnnotations data stores.
+Please note that you'll need a valid customer id and a secret token in order to authenticate to our systems.
+
+It was written in Python 3.7.7 under CentOS with requirements detailed in requirements.txt and all sources at
+the same directory as this README file for full visibility.
+
+You may run the uploader.py file directly with Python or use our distrabution (i.e. CLI) at the sample folder as
+this README file named ca_uploader.
+
+In both cases, the API is similar.
+
+
+API:
+
+* Please use full instead of relative path when passing path as an argument.
+
+arguments:
+  -h, --help            show this help message and exit
+  -c CUSTOMER, --customer CUSTOMER
+                        Your customer id
+  -t TOKEN, --token TOKEN
+                        Your customer secret token
+  -n DATASET_NAME, --dataset-name DATASET_NAME
+                        Name of dataset
+  -p DATASET_PATH, --dataset-path DATASET_PATH
+                        Local path to dataset
+  -b BBOX_PATH, --bbox-path BBOX_PATH
+                        Local path to bbox .json files, if applicable to the dataset
+  -v, --verbose         For debugging
+
+
+Verbosity:
+
+The API above is verbose by default, and can be even more verbose with the -v command.
+This is designed with the customer in mind and full visiblity on the process including all API calls.
+
+
+Packaging:
+
+The packaging code can be found at package/ directory. Using PyInstaller, we packaged the uploader.py for ease of usage.
+
+
+Requirements:
+
+Requirements provided in requirements.txt if using Python directly.
+Packaging requirements provided in package/requirements.txt if packaging locally.
