@@ -10,8 +10,7 @@ Please note that you'll need a valid customer id and a secret token in order to 
 It was written in Python 3.7.7 under CentOS with requirements detailed in requirements.txt and all sources at
 the same directory as this README file for full visibility.
 
-You may run the uploader.py file directly with Python or use our distrabution (i.e. CLI) at the sample folder as
-this README file named ca_uploader.
+You may run the uploader.py file directly with Python or use our distrabution (i.e. CLI) at bin/ca_uploader.
 
 In both cases, the API is similar.
 

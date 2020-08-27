@@ -337,7 +337,7 @@ def run_process(logger: logging.Logger, customer_id: int, token: str, dataset_na
     
     
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(add_help=True, prog="crowdannotations_uploader", description="CrowdAnnotations dataset uploader")
+    parser = argparse.ArgumentParser(add_help=True, prog="ca_uploader", description="CrowdAnnotations dataset uploader")
     
     parser.add_argument('-c', '--customer', help='Your customer id', required=True, type=int)
     parser.add_argument('-t', '--token', help='Your customer secret token', required=True, type=str)
