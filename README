@@ -15,6 +15,8 @@ this README file named ca_uploader.
 
 In both cases, the API is similar.
 
+* Please read "Temporary Files" to follow best practice and remove intermediate (zip) files created by this utility after it's done, 
+which can consume up to your dataset size in your TEMP_DIR unless you explicity clean it up afterwards.
 
 API:
 
@@ -33,6 +35,14 @@ arguments:
   -b BBOX_PATH, --bbox-path BBOX_PATH
                         Local path to bbox .json files, if applicable to the dataset
   -v, --verbose         For debugging
+
+
+Temporary Files:
+
+The utility will create a directory named "ca-uploads" at your TEMP_DIR (in linux it'll be /tmp/ca-uploads).
+There, it will store all intermediate files and __will not clean up after itself__ as above utility will not delete files on its own.
+
+It is therefor highly recommanded to clean up after running this utility, and remove TEMP_DIR/ca-uploads/ directory after the utility is done.
 
 
 Verbosity:
